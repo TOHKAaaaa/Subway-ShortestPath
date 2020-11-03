@@ -99,7 +99,7 @@ public class StationMap<T> {
 		int stopPos = getPosInvertex(stop);
 		int[] path = floyd.getPath(startPos, stopPos);
 		StringBuilder sb = new StringBuilder();
-		System.out.print(start + " 到 " + stop + " 的路线为: ");
+//		System.out.print(start + " 到 " + stop + " 的路线为: ");
 		sb.append(start + " 到 " + stop + " 的路线为: ");
 		int k=0;
 		for (int i : path) {
@@ -122,7 +122,7 @@ public class StationMap<T> {
 		}
 		System.out.println(sb.toString());
 		System.out.println("换乘站:");
-		sb.append(System.lineSeparator()+"换成站:"+System.lineSeparator());
+		sb.append(System.lineSeparator()+"换乘站:"+System.lineSeparator());
 		for(String s:change) {
 			System.out.println(s);
 			sb.append(s+System.lineSeparator());
